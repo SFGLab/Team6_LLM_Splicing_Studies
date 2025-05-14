@@ -17,6 +17,7 @@ The data processing pipeline for this project involves multiple steps to ensure 
 - **DNA Sequence Extraction**: Extract corresponding DNA sequences from the reference genome based on identified splice sites.
 - **One-Hot Encoding**: Convert DNA sequences into numerical representations suitable for LLM input.
 - **Dataset Splitting**: Divide the data into training, validation, and testing sets for robust model evaluation.
+![Flowchart-2](https://github.com/user-attachments/assets/15cd7633-0753-45b9-be9e-f71c7157b53d)
 
 ## Model Description
 The model used for this project is based on a large language model (LLM) architecture inspired by SpliceBERT, pre-trained on extensive RNA sequence data. It is designed to predict alternative splicing sites and differentiate between constitutive and alternative splicing events. The architecture includes the following components:
@@ -24,8 +25,6 @@ The model used for this project is based on a large language model (LLM) archite
 - **Tokenization**: Input RNA sequences are tokenized with position embeddings to capture sequence context.
 - **Transformer Encoder**: The core model uses multiple transformer layers, each containing multi-head self-attention, layer normalization, and feed-forward networks to learn complex sequence dependencies.
 - **Classification**: The output layer predicts the probability of each nucleotide being part of a constitutive or alternative splice site.
-
-![Flowchart-2](https://github.com/user-attachments/assets/15cd7633-0753-45b9-be9e-f71c7157b53d)
 
 ![Model Workflow](as_model.png)
 
