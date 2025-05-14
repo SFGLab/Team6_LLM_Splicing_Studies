@@ -1,12 +1,16 @@
 # Team6_LLM_Splicing_Studies
 
-## Introduction
+## Introduction & Background
 
 Alternative splicing (AS) is a critical regulatory mechanism in eukaryotic gene expression, allowing a single gene to produce multiple transcript variants and protein isoforms. This process significantly contributes to proteome diversity and plays a crucial role in cellular differentiation, tissue-specific gene expression, and disease development, including cancer. AS events include constitutive splicing, exon skipping, alternative 5' and 3' splice sites, intron retention, and mutually exclusive exons, as illustrated in the figure below.
 
 ![Alternative Splicing Mechanisms](alternative_splicing.png)
 
 Dysregulation of AS is frequently associated with tumorigenesis, influencing cancer hallmarks such as proliferation, apoptosis, angiogenesis, invasion, and metastasis. Understanding the regulation and prediction of AS is essential for developing targeted therapies and biomarkers.
+
+## Objective
+
+The idea is to train an LLM model for distinguishing RNA sequences that give rise to neojunctions, in cancerous tissues, from sequences that correspond to canonical splicing junctions, found in normal tissues. 
 
 ## Data Processing
 
