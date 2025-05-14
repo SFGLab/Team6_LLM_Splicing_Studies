@@ -18,8 +18,6 @@ The data processing pipeline for this project involves multiple steps to ensure 
 - **One-Hot Encoding**: Convert DNA sequences into numerical representations suitable for LLM input.
 - **Dataset Splitting**: Divide the data into training, validation, and testing sets for robust model evaluation.
 
-![Data Processing Flow](18b59bb3-8c64-4e59-87ca-2e9778187464.png)
-
 ## Model Description
 The model used for this project is based on a large language model (LLM) architecture inspired by SpliceBERT, pre-trained on extensive RNA sequence data. It is designed to predict alternative splicing sites and differentiate between constitutive and alternative splicing events. The architecture includes the following components:
 
