@@ -1,4 +1,5 @@
 # Team6_LLM_Splicing_Studies
+
 ## Introduction
 
 Alternative splicing (AS) is a critical regulatory mechanism in eukaryotic gene expression, allowing a single gene to produce multiple transcript variants and protein isoforms. This process significantly contributes to proteome diversity and plays a crucial role in cellular differentiation, tissue-specific gene expression, and disease development, including cancer. AS events include constitutive splicing, exon skipping, alternative 5' and 3' splice sites, intron retention, and mutually exclusive exons, as illustrated in the figure below.
@@ -6,6 +7,18 @@ Alternative splicing (AS) is a critical regulatory mechanism in eukaryotic gene 
 ![Alternative Splicing Mechanisms](alternative_splicing.png)
 
 Dysregulation of AS is frequently associated with tumorigenesis, influencing cancer hallmarks such as proliferation, apoptosis, angiogenesis, invasion, and metastasis. Understanding the regulation and prediction of AS is essential for developing targeted therapies and biomarkers.
+
+## Data Processing
+
+The data processing pipeline for this project involves multiple steps to ensure high-quality training and evaluation data:
+
+- **Data Acquisition and Preprocessing**: Collect tumor splicing event data, including transcript sequences and splicing annotations.
+- **Filtering**: Remove low-confidence events based on PSI (Percent Spliced In) thresholds to retain significant splicing events.
+- **DNA Sequence Extraction**: Extract corresponding DNA sequences from the reference genome based on identified splice sites.
+- **One-Hot Encoding**: Convert DNA sequences into numerical representations suitable for LLM input.
+- **Dataset Splitting**: Divide the data into training, validation, and testing sets for robust model evaluation.
+
+![Data Processing Flow](18b59bb3-8c64-4e59-87ca-2e9778187464.png)
 
 ## Model Description
 The model used for this project is based on a large language model (LLM) architecture inspired by SpliceBERT, pre-trained on extensive RNA sequence data. It is designed to predict alternative splicing sites and differentiate between constitutive and alternative splicing events. The architecture includes the following components:
