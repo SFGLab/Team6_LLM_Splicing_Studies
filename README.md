@@ -63,10 +63,6 @@ The data processing pipeline for this project involves multiple steps to ensure 
 
 ![Model Workflow](as_model.png)
 
-### Key Features
-- Supports constitutive splicing, alternative splicing (tumor-specific and non-tumor-specific), and intron retention prediction.
-- Fine-tuned for splicing site detection in healthy and tumor tissues.
-- Outputs include splice site probability scores and cross-entropy loss for training optimization.
 
 ## Future directions
 - Plotting and comparing attention weights to understand what parts of the input sequence the model "pays attention to" when making its classification (neojunction vs. normal junction). 
