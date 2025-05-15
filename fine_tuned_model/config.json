@@ -1,0 +1,28 @@
+{
+    "model_paths": {
+        "pretrained_model_path": "YOUR_PATH_TO/chenkenbio/splicebert/SpliceBERT-dc1d8781f6f167c70421c3f8b809772637031d98/models/splicebert-510",
+        "tokenizer_path": "YOUR_PATH_TO/chenkenbio/splicebert/SpliceBERT-dc1d8781f6f167c70421c3f8b809772637031d98/models/splicebert-510"
+    },
+    "data_paths": {
+        "neojunction_file_path": "Neojunction.txt",
+        "normal_junction_file_path": "Normal_junctions.txt"
+    },
+    "data_processing": {
+        "input_file_format": "gene_seq",
+        "max_samples_per_class": 50000,
+        "max_seq_length": 510,
+        "resample_strategy_train_set": "oversample",
+        "validation_set_test_size": 0.2
+    },
+    "training_params": {
+        "output_dir": "./splicebert_finetuned_neojunction_classifier_output",
+        "num_train_epochs": 3,
+        "per_device_train_batch_size": 8,
+        "per_device_eval_batch_size": 16,
+        "learning_rate": 2e-5,
+        "random_seed": 42
+    },
+    "logging_params": {
+        "log_level": "INFO"
+    }
+}
