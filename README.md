@@ -12,8 +12,6 @@ Dysregulation of AS is frequently associated with tumorigenesis, influencing can
 
 The idea is to train an LLM model for distinguishing RNA sequences that give rise to neojunctions, in cancerous tissues, from sequences that correspond to canonical splicing junctions, found in normal tissues. 
 
-![Flowchart-2](https://github.com/user-attachments/assets/15cd7633-0753-45b9-be9e-f71c7157b53d)
-
 
 ## Data
 - TCGA (specifcally tss_complexity_counts.whitelisted.G0.01.globsum20.filtLib.conf3_neojunctions_corrected.tsv.gz) https://gdc.cancer.gov/about-data/publications/PanCanAtlas-Splicing-2018
